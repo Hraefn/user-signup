@@ -47,11 +47,11 @@ def verify():
         password_error = "Your password cannot contain more than 20 characters"
         error = 1
 
-    if password == "":
-        password_error = "Your password cannot be blank"
+    if verify == "":
+        verify_error = "Your password verification cannot be blank"
         error = 1
     elif password != verify:
-        verification_error = "Your password did not verify"
+        verification_error = "Your passwords did not match"
         error = 1
 
     if email != "":
