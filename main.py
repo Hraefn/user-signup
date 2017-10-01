@@ -48,7 +48,7 @@ def verify():
         error = 1
 
     if verify == "":
-        verify_error = "Your password verification cannot be blank"
+        verification_error = "Your password verification cannot be blank"
         error = 1
     elif password != verify:
         verification_error = "Your passwords did not match"
