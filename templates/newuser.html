@@ -1,34 +1,33 @@
 {% extends "index.html" %}
 
 {% block content %}
-<h2>Hey, Look at This!  </h2>
+<h2>You know you want to!  </h2>
 
 <form method="post">
     <table>
         <tr>
-            <td><label for="username">What's your name, sucker?</label></td>
+            <td><label for="username">What's your name?</label></td>
             <td>
                 <input name="username" type="text" value="{{ username }}">
                 <span class="error">{{ username_error }}</span>
             </td>
         </tr>
         <tr>
-            <td><label for="password">Top Secret Password Required.</label></td>
+            <td><label for="password">Password, please.</label></td>
             <td>
                 <input name="password" type="password">
                 <span class="error">{{ password_error }}</span>
             </td>
         </tr>
         <tr>
-            <td><label for="verify">Play it again, Sam.</label></td>
+            <td><label for="verify">Once more for verification.</label></td>
             <td>
                 <input name="verify" type="password">
                 <span class="error">{{ verification_error }}</span>
             </td>
         </tr>
         <tr>
-            <td><label for="email">Gimme your email address and I'll give you a dollar.
-             <br>(Optional. But hey, in for a penny, in for a pound!)</label></label></td>
+            <td><label for="email">Would you like to give your email? (Optional)</label></label></td>
             <td>
                 <input name="email" value="{{ email }}">
                 <span class="error">{{ email_error }}</span>
